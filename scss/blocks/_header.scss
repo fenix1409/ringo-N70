@@ -1,0 +1,102 @@
+.site-header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: $white-clr;
+    z-index: 100;
+}
+.header {
+    @include Display($items: center, $space:space-between, $gap:149px);
+}
+.header__logo-wrapper {
+    @include Display($items: center, $space:center, $gap:143px);
+}
+.header__logo {
+    display: inline-block;
+}
+.ringo__list {
+    @include Display($items: center, $space:start, $gap:40px);
+}
+.ringo__link {
+    @include textStyle($MB: 0, $FS:16px, $FW:500, $CLR:$green-clr, $LH:16px, $CASE:inherit);
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: $black-clr;
+    }
+}
+.header__app-wrapper {
+    @include Display($items: center, $space:center, $gap:60px);
+}
+.app__link-wrapper{
+    @include Display($items: center, $space:center, $gap:18px);
+}
+.app__phone {
+    @include Display($items: center, $space:center, $gap:15px);
+}
+.app__text {
+    @include textStyle($MB: 0, $FS:20px, $FW:600, $CLR:$green-clr, $LH:20px, $CASE:inherit);
+
+    &:hover{
+        color: $black-clr;
+    }    
+}
+.header__hamburger-btn{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+// tablet 
+@media (max-width:1186px){
+    .header {
+        @include Display($items: center, $space:space-between, $gap:51px);
+    }
+    .ringo__list {
+        @include Display($items: center, $space:start, $gap:30px);
+    }
+    .header__app-wrapper {
+        @include Display($items: center, $space:center, $gap:51px);
+    }
+}
+// tablet 
+
+
+
+
+// mobile 
+@media (max-width:983px){
+    .ringo__list {
+    display: none;
+}
+.header__hamburger-btn{
+    display: block;
+}
+}
+// mobile 
+
+
+
+
+// mobile 2
+@media (max-width:583px){
+    .ringo__list {
+    display: none;
+}
+.ringo__list {
+    display: none;
+}
+.app__link-wrapper{
+    display: none;
+}
+.app__phone {
+    display: none;
+}
+.app__text {
+    display: none;  
+}
+.header__hamburger-btn{
+    display: block;
+}
+}
+// mobile2 
