@@ -54,7 +54,6 @@ body {
 
 .site-header {
   padding: 20px 0;
-  position: fixed;
   width: 100%;
   background-color: white;
   z-index: 100;
@@ -313,27 +312,95 @@ body {
 }
 @media (max-width: 560px) {
   .hero-section {
-    padding: 40px 0 15px;
+    padding-top: 45px;
     background-image: url(../../images/hero-mobile-bg2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100vh;
-    background-position: center center, center bottom;
+    height: 95vh;
+    background-position: center center;
   }
   .hero__content-wrapper {
     padding-bottom: 33px;
-    width: 50%;
+    width: 82%;
     margin: 0 auto;
     text-align: center;
     border-bottom: 1px solid white;
   }
+  .hero__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    line-height: 33px;
+    text-transform: inherit;
+  }
   .hero__text {
     margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    line-height: 21px;
+    text-transform: inherit;
   }
   .arrow__wrapper {
     display: none;
   }
   .arrow__number-wrapper {
     margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .hero-section {
+    padding: 45px 0 15px;
+    background-image: url(../../images/hero-mobile-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 110vh;
+    background-position: center center;
+  }
+  .hero__content-wrapper {
+    padding-bottom: 33px;
+    width: 82%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .hero__title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    line-height: 33px;
+    text-transform: inherit;
+  }
+  .hero__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    line-height: 21px;
+    text-transform: inherit;
+  }
+  .arrow__wrapper {
+    display: none;
+  }
+  .arrow__number-wrapper {
+    margin: 0 auto;
+  }
+  .hero__btn {
+    display: inline-block;
+    width: 240px;
+    padding: 22px 0;
+    background-color: rgb(174, 123, 60);
+    border-radius: 0px;
+    border: 1px solid unset;
+    transition: all 0.3s linear;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: inherit;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
